@@ -1,0 +1,25 @@
+@model IEnumerable<WeatherGuard.Models.Usuario>
+
+<h2>Usuários</h2>
+<a asp-action="Create">Novo Usuário</a>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Cidade</th>
+            <th>Alertas</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var usuario in Model)
+{
+    <tr>
+        <td>@usuario.Nome</td>
+        <td>@usuario.Email</td>
+        <td>@usuario.Cidade</td>
+        <td>@usuario.Alertas?.Count()</td>
+    </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,19 @@
+@model WeatherGuard.Models.Usuario
+
+<h2>Novo Usuário</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Nome"></label>
+        <input asp-for="Nome" />
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label asp-for="Cidade"></label>
+        <input asp-for="Cidade" />
+    </div>
+    <button type="submit">Salvar</button>
+</form>

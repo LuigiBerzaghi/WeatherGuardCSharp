@@ -1,0 +1,25 @@
+@model IEnumerable<WeatherGuard.Models.Alerta>
+
+<h2>Alertas</h2>
+<a asp-action="Create">Novo Alerta</a>
+<table>
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Descrição</th>
+            <th>Data</th>
+            <th>Usuário</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var alerta in Model)
+{
+    <tr>
+        <td>@alerta.Tipo</td>
+        <td>@alerta.Descricao</td>
+        <td>@alerta.DataCriacao</td>
+        <td>@alerta.Usuario?.Nome</td>
+    </tr>
+}
+    </tbody>
+</table>

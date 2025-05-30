@@ -1,0 +1,21 @@
+@model WeatherGuard.Models.Alerta
+
+<h2>Novo Alerta</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label asp-for="Tipo"></label>
+        <input asp-for="Tipo" />
+    </div>
+    <div>
+        <label asp-for="Descricao"></label>
+        <input asp-for="Descricao" />
+    </div>
+    <div>
+        <label asp-for="UsuarioId">Usuário</label>
+        <select asp-for="UsuarioId" asp-items="@(new SelectList(ViewBag.Usuarios, "Id", "Nome"))">
+            <option value="">Selecione...</option>
+        </select>
+    </div>
+    <button type="submit">Salvar</button>
+</form>
