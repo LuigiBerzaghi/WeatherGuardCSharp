@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 using WeatherGuard.Data;
 using WeatherGuard.Models;
 
 namespace WeatherGuard.Controllers
 {
-    public class UsuariosController : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UsuariosController : ControllerBase
     {
         private readonly AppDbContext _context;
 
@@ -14,28 +17,22 @@ namespace WeatherGuard.Controllers
             _context = context;
         }
 
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var usuarios = await _context.Usuarios.Include(u => u.Alertas).ToListAsync();
-            return View(usuarios);
-        }
-
-        public IActionResult Create()
-        {
-            return View();
+            return Ok(usuarios);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Usuario usuario)
+        public async Task<IActionResult> Create([FromBody] Usuario usuario)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(usuario);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(usuario);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            _context.Usuarios.Add(usuario);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(Index), new { id = usuario.Id }, usuario);
         }
     }
 }
