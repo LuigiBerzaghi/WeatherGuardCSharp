@@ -115,6 +115,10 @@ https://localhost:5001/swagger
 
 * Sem corpo: apenas a URL com o ID do usuário
 
+### GET /api/Usuarios
+
+* Sem corpo: Retorna todos os usuários
+
 ---
 
 ## 📁 Estrutura de Pastas
@@ -139,11 +143,3 @@ Projeto desenvolvido para a disciplina *Advanced Business Development with .NET*
 FIAP - Análise e Desenvolvimento de Sistemas (2025)
 
 ---
-
-## 📜 Licença
-
-Uso educacional. Projeto demonstrativo para avaliação da disciplina.
-
----
-
-Vamos proteger o futuro com tecnologia! ✨
