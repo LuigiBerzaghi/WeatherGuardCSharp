@@ -146,7 +146,9 @@ WeatherGuard/
 ## 👨‍💻 Autores
 
 **Luigi Berzaghi** - RM555516
+
 **Guilherme Pelissari** - RM
+
 **Cauã dos Santos** - RM
 
 ---
