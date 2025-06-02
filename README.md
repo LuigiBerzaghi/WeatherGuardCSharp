@@ -143,10 +143,10 @@ WeatherGuard/
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
-**Luigi Berzaghi**
-Projeto desenvolvido para a disciplina *Advanced Business Development with .NET*
-FIAP - Análise e Desenvolvimento de Sistemas (2025)
+**Luigi Berzaghi** - RM555516
+**Guilherme Pelissari** - RM
+**Cauã dos Santos** - RM
 
 ---
