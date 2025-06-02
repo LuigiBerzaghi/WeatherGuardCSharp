@@ -37,6 +37,7 @@ O **WeatherGuard** é uma aplicação backend desenvolvida em **.NET 8** com **E
 | Nome   | string |
 | Email  | string |
 | Cidade | string |
+| Alertas| Alerta |
 
 ### Alerta
 
@@ -47,6 +48,7 @@ O **WeatherGuard** é uma aplicação backend desenvolvida em **.NET 8** com **E
 | Descricao   | string   |
 | DataCriacao | datetime |
 | UsuarioId   | int      |
+| Usuario     | Usuario  |
 
 > Relacionamento: Um **Usuário** pode ter vários **Alertas**.
 
