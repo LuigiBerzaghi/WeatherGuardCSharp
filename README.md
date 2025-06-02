@@ -9,8 +9,6 @@ Esses alertas são exibidos por meio de um aplicativo mobile intuitivo, acessív
 
 Mais do que uma aplicação técnica, o WeatherGuard é uma iniciativa de impacto social, que visa informar, prevenir e salvar vidas através da tecnologia.
 
-> **Objetivo**: Criar uma API REST robusta para cadastro de usuários e geração de alertas de desastres naturais, com persistência em banco relacional e documentação via Swagger.
-
 ---
 
 ## ✅ Funcionalidades
