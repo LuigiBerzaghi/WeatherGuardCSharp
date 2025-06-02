@@ -1,6 +1,13 @@
 # 🌪️ WeatherGuard – Sistema de Alerta Climático Inteligente
 
-O **WeatherGuard** é uma aplicação backend desenvolvida em **.NET 8** com **Entity Framework Core + SQLite**, criada como parte da *Global Solution FIAP 2025*. O sistema tem como foco a proteção da população diante de eventos climáticos extremos, como chuvas intensas, ventos fortes e calor excessivo.
+:cloud_tornado: WeatherGuard – Sistema de Alerta Climático Inteligente
+WeatherGuard é um sistema de alerta climático projetado para proteger a população diante de eventos naturais extremos, com foco especial em chuvas intensas, ventos fortes e altas temperaturas, fenômenos que têm afetado gravemente diversas regiões do Brasil.
+
+O sistema identifica condições críticas e gera alertas automáticos personalizados para cada usuário, promovendo uma resposta rápida e eficaz.
+
+Esses alertas são exibidos por meio de um aplicativo mobile intuitivo, acessível a qualquer pessoa, fortalecendo a prevenção de desastres e a segurança das comunidades.
+
+Mais do que uma aplicação técnica, o WeatherGuard é uma iniciativa de impacto social, que visa informar, prevenir e salvar vidas através da tecnologia.
 
 > **Objetivo**: Criar uma API REST robusta para cadastro de usuários e geração de alertas de desastres naturais, com persistência em banco relacional e documentação via Swagger.
 
