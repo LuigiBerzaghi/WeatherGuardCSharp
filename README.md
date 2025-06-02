@@ -90,7 +90,7 @@ dotnet run
 5. Acesse no navegador:
 
 ```
-[https://localhost:5001/swagger](https://localhost:5001/swagger)
+http://localhost:53805/swagger/index.html
 ```
 
 ---
