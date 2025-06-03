@@ -127,6 +127,21 @@ http://localhost:53805/swagger/index.html
 * Sem corpo: Retorna todos os usuários
 
 ---
+### POST /api/Alertas
+
+```json
+{
+  "tipo": "Chuva Intensa",
+  "descricao": "Alerta de inundação na região central",
+  "dataCriacao": "2025-06-03T20:22:51.180Z",
+  "usuarioId": 1
+}
+```
+### GET /api/Usuarios
+
+* Sem corpo: Retorna todos os alertas
+  
+---
 
 ## 📁 Estrutura de Pastas
 
