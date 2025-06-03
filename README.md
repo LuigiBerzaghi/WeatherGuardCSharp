@@ -1,6 +1,5 @@
 # 🌪️ WeatherGuard – Sistema de Alerta Climático Inteligente
 
-:cloud_tornado: WeatherGuard – Sistema de Alerta Climático Inteligente
 WeatherGuard é um sistema de alerta climático projetado para proteger a população diante de eventos naturais extremos, com foco especial em chuvas intensas, ventos fortes e altas temperaturas, fenômenos que têm afetado gravemente diversas regiões do Brasil.
 
 O sistema identifica condições críticas e gera alertas automáticos personalizados para cada usuário, promovendo uma resposta rápida e eficaz.
